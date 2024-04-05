@@ -1,0 +1,71 @@
+@import "../../styles/default-styles";
+
+.sidebar-top-section {
+  width: 100%;
+  height: 10%;
+  padding: 10px 20px;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .user-section {
+      display: flex;
+
+      .profile-image-container {
+        overflow: hidden;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        align-self: center;
+
+        .profile-image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .welcome-and-signout {
+        margin-left: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div {
+          color: $primary-blue;
+          font-weight: 500;
+        }
+
+        .signout-section {
+          color: red;
+          font-size: 12px;
+          font-weight: normal;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .new-chat {
+      height: 40px;
+      width: 40px;
+
+      .new-chat-svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .uid {
+    font-size: 12px;
+    text-align: center;
+  }
+}

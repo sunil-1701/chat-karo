@@ -1,0 +1,10 @@
+@import "./styles/default-styles";
+
+.App {
+  height: 100vh;
+
+  * {
+    color: $primary-black;
+  }
+  // overflow: hidden;
+}

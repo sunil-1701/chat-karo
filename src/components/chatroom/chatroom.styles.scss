@@ -1,0 +1,30 @@
+.chatroom {
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .chatroom-name {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(1);
+    }
+  }
+
+  .line {
+    width: 90%;
+    height: 1px;
+    background: #616061;
+  }
+}

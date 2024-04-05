@@ -1,0 +1,130 @@
+@import "../../styles//default-styles";
+
+.homepage {
+  height: 100%;
+  width: 100%;
+  padding: 0 5%;
+
+  .header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-title {
+      font-size: 40px;
+      font-family: pacifico, sans-serif;
+      color: $primary-black;
+      cursor: pointer;
+    }
+
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60px;
+      cursor: pointer;
+
+      .line1,
+      .line2,
+      .line3 {
+        height: 4px;
+        background: $primary-black;
+        margin: 4px 0;
+      }
+
+      .line1 {
+        width: 100%;
+      }
+      .line2 {
+        width: 64%;
+      }
+      .line3 {
+        width: 40%;
+      }
+    }
+  }
+
+  .homepage-content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    .left-content,
+    .right-content {
+      height: 100%;
+    }
+
+    .left-content {
+      display: flex;
+      flex-direction: column;
+      width: 55%;
+
+      .heading {
+        color: $primary-blue;
+        margin-top: 100px;
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      .subheading {
+        color: $greenish-blue;
+        margin-top: 45px;
+        font-size: 35px;
+      }
+
+      .whatwedo {
+        color: $primary-grey;
+        width: 90%;
+        font-size: 25px;
+        margin-top: 50px;
+      }
+
+      .google-signin-section {
+        margin-top: 150px;
+        cursor: pointer;
+
+        .google-signin {
+          font-size: 36px;
+          display: flex;
+          align-items: center;
+          color: $primary-black;
+          .google-icon {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    .right-content {
+      width: 45%;
+      .hero-image-container {
+        width: 100%;
+        height: 100%;
+        .hero-image {
+          width: 100%;
+          height: auto;
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+}
+
+#message {
+  animation: animate-messages 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes animate-messages {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
